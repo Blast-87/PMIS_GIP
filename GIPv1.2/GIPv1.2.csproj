@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58511693-01DE-4685-950F-4CFF736DED52}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GIPv1._2</RootNamespace>
+    <AssemblyName>GIPv1.2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckUser.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="Forms\AddDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddDocs.Designer.cs">
+      <DependentUpon>AddDocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEmpoyee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEmpoyee.Designer.cs">
+      <DependentUpon>AddEmpoyee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddJob.Designer.cs">
+      <DependentUpon>AddJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddProject.Designer.cs">
+      <DependentUpon>AddProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddProject1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddProject1.Designer.cs">
+      <DependentUpon>AddProject1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddJobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddJobs.Designer.cs">
+      <DependentUpon>AddJobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditProject.Designer.cs">
+      <DependentUpon>EditProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditSign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditSign.Designer.cs">
+      <DependentUpon>EditSign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WorkObjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WorkObjects.Designer.cs">
+      <DependentUpon>WorkObjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GIPvRTM2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GIPvRTM2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="md5.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\jobsV4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\jobsV4.Designer.cs">
+      <DependentUpon>jobsV4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Documents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Documents.Designer.cs">
+      <DependentUpon>UC_Documents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Empl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Empl.Designer.cs">
+      <DependentUpon>UC_Empl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Jobs3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Jobs3.Designer.cs">
+      <DependentUpon>UC_Jobs3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_JobsV2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_JobsV2.Designer.cs">
+      <DependentUpon>UC_JobsV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Reports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Reports.Designer.cs">
+      <DependentUpon>UC_Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Employees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Employees.Designer.cs">
+      <DependentUpon>UC_Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Jobs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Jobs.Designer.cs">
+      <DependentUpon>UC_Jobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Dashboard.Designer.cs">
+      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Projects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Projects.Designer.cs">
+      <DependentUpon>UC_Projects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_GIPv1_16DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_GIPv1_16DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_GIPv1_17DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_GIPv1_17DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_GIPv1_17DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_GIPv1_17DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_GIPv1_17DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_GIPv1_17DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_GIPv1_17DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_GIPv1_17DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_GIPv1_5DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_GIPv1_5DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_GIPv1_7DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_GIPv1_7DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_GIPv1_8DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_GIPv1_8DataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\AddDocs.resx">
+      <DependentUpon>AddDocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEmpoyee.resx">
+      <DependentUpon>AddEmpoyee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddJob.resx">
+      <DependentUpon>AddJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddProject.resx">
+      <DependentUpon>AddProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddProject1.resx">
+      <DependentUpon>AddProject1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddJobs.resx">
+      <DependentUpon>AddJobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditProject.resx">
+      <DependentUpon>EditProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditSign.resx">
+      <DependentUpon>EditSign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WorkObjects.resx">
+      <DependentUpon>WorkObjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControls\jobsV4.resx">
+      <DependentUpon>jobsV4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Documents.resx">
+      <DependentUpon>UC_Documents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Empl.resx">
+      <DependentUpon>UC_Empl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Jobs3.resx">
+      <DependentUpon>UC_Jobs3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_JobsV2.resx">
+      <DependentUpon>UC_JobsV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Reports.resx">
+      <DependentUpon>UC_Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Employees.resx">
+      <DependentUpon>UC_Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Jobs.resx">
+      <DependentUpon>UC_Jobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Dashboard.resx">
+      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Projects.resx">
+      <DependentUpon>UC_Projects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="GIPvRTM2DataSet.xsc">
+      <DependentUpon>GIPvRTM2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GIPvRTM2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GIPvRTM2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GIPvRTM2DataSet.xss">
+      <DependentUpon>GIPvRTM2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\GIPv1._2._GIPv1_7DataSetTableAdapters.ОтделTableAdapter.datasource" />
+    <None Include="Properties\DataSources\_GIPv1_17DataSet.ОтделDataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_GIPv1_16DataSet.xsc">
+      <DependentUpon>_GIPv1_16DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_GIPv1_16DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_GIPv1_16DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_GIPv1_16DataSet.xss">
+      <DependentUpon>_GIPv1_16DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_GIPv1_17DataSet.xsc">
+      <DependentUpon>_GIPv1_17DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_GIPv1_17DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_GIPv1_17DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_GIPv1_17DataSet.xss">
+      <DependentUpon>_GIPv1_17DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_GIPv1_17DataSet1.xsc">
+      <DependentUpon>_GIPv1_17DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_GIPv1_17DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_GIPv1_17DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_GIPv1_17DataSet1.xss">
+      <DependentUpon>_GIPv1_17DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_GIPv1_17DataSet2.xsc">
+      <DependentUpon>_GIPv1_17DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_GIPv1_17DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_GIPv1_17DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_GIPv1_17DataSet2.xss">
+      <DependentUpon>_GIPv1_17DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_GIPv1_17DataSet3.xsc">
+      <DependentUpon>_GIPv1_17DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_GIPv1_17DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_GIPv1_17DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_GIPv1_17DataSet3.xss">
+      <DependentUpon>_GIPv1_17DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_GIPv1_5DataSet.xsc">
+      <DependentUpon>_GIPv1_5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_GIPv1_5DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_GIPv1_5DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_GIPv1_5DataSet.xss">
+      <DependentUpon>_GIPv1_5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_GIPv1_7DataSet.xsc">
+      <DependentUpon>_GIPv1_7DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_GIPv1_7DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_GIPv1_7DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_GIPv1_7DataSet.xss">
+      <DependentUpon>_GIPv1_7DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_GIPv1_8DataSet.xsc">
+      <DependentUpon>_GIPv1_8DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_GIPv1_8DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_GIPv1_8DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_GIPv1_8DataSet.xss">
+      <DependentUpon>_GIPv1_8DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
